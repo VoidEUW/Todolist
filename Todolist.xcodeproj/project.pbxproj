@@ -6,8 +6,15 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		751BBB072D1D6BA00045E4D7 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 751BBB062D1D6B9B0045E4D7 /* README.md */; };
+		755EFB822D1EC78D00CF80F6 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 755EFB812D1EC78600CF80F6 /* .gitignore */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
-		75A901352D1C9ABE00025FD4 /* Todolist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Todolist.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		751BBB062D1D6B9B0045E4D7 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		755EFB682D1DE40D00CF80F6 /* Todolist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Todolist.app; path = /Users/void/Documents/Projects/Programs/Todolist/build/Debug/Todolist.app; sourceTree = "<absolute>"; };
+		755EFB812D1EC78600CF80F6 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -32,17 +39,10 @@
 		75A9012C2D1C9ABE00025FD4 = {
 			isa = PBXGroup;
 			children = (
+				755EFB812D1EC78600CF80F6 /* .gitignore */,
+				751BBB062D1D6B9B0045E4D7 /* README.md */,
 				75A901372D1C9ABE00025FD4 /* Todolist */,
-				75A901362D1C9ABE00025FD4 /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		75A901362D1C9ABE00025FD4 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				75A901352D1C9ABE00025FD4 /* Todolist.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -67,7 +67,7 @@
 			packageProductDependencies = (
 			);
 			productName = Todolist;
-			productReference = 75A901352D1C9ABE00025FD4 /* Todolist.app */;
+			productReference = 755EFB682D1DE40D00CF80F6 /* Todolist.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -78,7 +78,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1610;
-				LastUpgradeCheck = 1610;
+				LastUpgradeCheck = 1620;
 				TargetAttributes = {
 					75A901342D1C9ABE00025FD4 = {
 						CreatedOnToolsVersion = 16.1;
@@ -98,7 +98,7 @@
 			mainGroup = 75A9012C2D1C9ABE00025FD4;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 75A901362D1C9ABE00025FD4 /* Products */;
+			productRefGroup = 75A9012C2D1C9ABE00025FD4;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -112,6 +112,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				755EFB822D1EC78D00CF80F6 /* .gitignore in Resources */,
+				751BBB072D1D6BA00045E4D7 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,6 +135,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -162,6 +165,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -194,6 +198,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -223,6 +228,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -250,9 +256,10 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Todolist/Todolist.entitlements;
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Todolist/Preview Content\"";
 				DEVELOPMENT_TEAM = 2XHQXDPABF;
 				ENABLE_PREVIEWS = YES;
@@ -294,9 +301,10 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Todolist/Todolist.entitlements;
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Todolist/Preview Content\"";
 				DEVELOPMENT_TEAM = 2XHQXDPABF;
 				ENABLE_PREVIEWS = YES;
